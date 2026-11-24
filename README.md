@@ -6,6 +6,14 @@
 | [`frontend/`](frontend/README.md) | Web client — React 18 + TypeScript + Vite + Fluent UI v9 + dnd-kit, form editor modelled after the bpmn.io form editor |
 | [`docs/`](docs/) | Test case sheet and browser test evidence |
 
+## Repositories
+
+- **Root repository:** https://github.com/zulkifliraihan/test_kitameraki
+- **Frontend repository (private):** https://github.com/zulkifliraihan/test_kitameraki-fe
+  Access invitations have been sent to me@abdulhalimzhr.com, muhammadfaisalmaulanaputra2024@gmail.com, and faiz.sulistiyo@gmail.com. The invitation can be accepted through the following link: https://github.com/zulkifliraihan/test_kitameraki-fe/invitations
+- **Backend repository:** https://github.com/zulkifliraihan/test_kitameraki-be
+- **Backend pull request to the `main` branch:** https://github.com/MuhammadFaisalMaulanaPutra/kitameraki-be-test/pull/50
+
 ## Run everything with one command
 
 Requirements: Docker (Docker Desktop / OrbStack). Works on x64 and Apple Silicon.
