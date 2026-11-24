@@ -1,0 +1,7 @@
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/zulkifliraihan/test_kitameraki-fe.git
+[submodule "backend"]
+	path = backend
+	url = https://github.com/zulkifliraihan/test_kitameraki-be.git
+	branch = zulkifli_raihan

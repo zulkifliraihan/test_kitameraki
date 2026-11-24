@@ -1,0 +1,26 @@
+# Full stack in one command:  docker compose up --build
+#   Web app       http://localhost:3000
+#   API           http://localhost:7071/api
+#   Swagger UI    http://localhost:7071/api/docs
+#   Cosmos DB     http://localhost:1234  (Data Explorer of the local emulator)
+name: kitameraki-task-management
+
+include:
+  # Cosmos DB emulator + Task API (also runnable on its own from ./backend)
+  - path: ./backend/docker-compose.yml
+
+services:
+  web:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE_URL: /api
+        VITE_ORGANIZATION_ID: 5f0c9d4e-8a3b-4c2d-9e1f-7a6b5c4d3e2f
+    environment:
+      API_UPSTREAM: http://api:7071
+    ports:
+      - "3000:80"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
